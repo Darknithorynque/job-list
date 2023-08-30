@@ -16,7 +16,7 @@ function SinglePage() {
   const [searchPriority, setSearchPriority] = useState("All");
   const [filteredJobList, setFilteredJobList] = useState(jobList);
   const [inputValue, setInputValue] = useState("");
-  const [priority, setPriority] = useState("");
+  const [priority, setPriority] = useState("Urgent");
   const [modalInputVal, setModalInputVal] = useState("");
   const [modalSelect, setModalSelect] = useState("");
   const [selectedJobIndex, setSelectedJobIndex] = useState(null);

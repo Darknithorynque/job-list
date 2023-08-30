@@ -309,6 +309,13 @@ body {
     margin-bottom: 10px;
   }
 
+  .modal-job-forms {
+    padding: 5px;
+    width: 19rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(118, 118, 118, 0.3);
+  }
+
   .job-details-h {
     width: 100%;
     padding: 5px;
