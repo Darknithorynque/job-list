@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .sOpt-container {
+    display: block;
+    margin-inline: 12rem;
+    height: 100vh;
+  }
+  .sOpt-add-section {
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 60rem;
+  }
+
+  .create-newJob-title {
+    margin-block-end: 0em !important;
+    font-size: 1.2rem;
+  }
+  .job-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .job-details p {
+    margin-block-end: 5px;
+    opacity: 0.6;
+  }
+
+  .job-details-name {
+    width: calc(70% - 10px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .job-details-priority {
+    width: calc(18% - 10px);
+    display: flex;
+    margin-left: 18px;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .job-details-button {
+    width: calc(10% - 10px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .job-details-h {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .create-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-top: auto; /* This ensures the button aligns to the bottom of the container */
+  }
+  
+  .joblist-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .joblist-container h5 {
+    font-size: 1.1rem;
+    margin-block-end: 0.8em;
+  }
+
+  .joblist-container .ratio {
+    opacity: 0.4;
+  }
+
+  .joblist-filter-section {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #add8e6;
+  }
+
+  .joblist-filter-section input {
+    width: calc(65% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .joblist-filter-section select {
+    width: calc(33% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .joblist-title-filter-section {
+    margin-top: 5px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #add8e6;
+  }
+
+  .joblist-title-filter-section p {
+    margin-block: 2px;
+    opacity: 0.5;
+  }
+
+  .job-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Add horizontal scrolling if needed */
+  }
+  
+  .name-column {
+    width: 50%;
+  }
+  
+  .priority-column {
+    width: 30%;
+  }
+  
+  .actions-column {
+    width: 20%;
+  }
+
+
+  .job-list-table-head {
+   
+    background-color: #add8e6 ;
+  }
+
+  th {
+    background-color: #add8e6;
+    border-spacing: 0px;
+    padding-inline: 10px;
+    padding-block: 5px;
+  }
+
+  td {
+    padding-inline: 10px;
+    padding-block: 15px;
+  }
+
+  .priority-tag {
+    padding: 10px;
+    color: #ffff;
+    width: 50px;
+    padding-inline: 15px;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .action-edit {
+    padding: 10px;
+   
+    background-color: #E5E4E2;
+    border-radius: 2px;
+    margin-inline-end: 15px;
+  }
+
+  .action-delete {
+    padding: 10px;
+   
+    background-color: #E5E4E2;
+    border-radius: 2px;
+  
+  }
+
+  .modal-job-main-title {
+    text-align: center;
+    font-family: math;
+  }
+
+  .dModal-title {
+    text-align: center;
+    font-family: math;
+    font-weight: 700;
+  }
+
+  .modal-icon-sec {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-job-titles {
+    margin-block-end: 3px;
+    font-size: 0.9rem;
+    opacity: 0.5;
+  }
+
+  .modal-job-forms {
+    padding: 5px;
+    width: 24rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(118, 118, 118, 0.3);
+
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block-start: 1rem;
+  }
+
+  .modal-buttons .save {
+    padding: 6px;
+    padding-inline: 32px;
+    width: 7rem;
+    background-color: #DC4C64;
+    color: #ffff;
+    border: 1px solid rgba(118, 118, 118, 0.3);
+    border-radius: 3px;
+
+  }
+
+  .modal-buttons .cancel {
+    padding: 6px;
+    padding-inline: 32px;
+    width: 7rem;
+    border-radius: 3px;
+    opacity: 0.8;
+    background-color: rgba(118, 118, 118, 0.3);
+    border: 1px solid rgba(118, 118, 118, 0.3);
+
+  }
+
+  .dModal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 1rem;
+    width: 17rem;
+  }
+
+  .dModal-buttons .cancel {
+    padding: 6px;
+    padding-inline: 32px;
+    width: 3rem;
+    border-radius: 3px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: rgba(118, 118, 118, 0.3);
+    border: 1px solid rgba(118, 118, 118, 0.3);
+  }
+
+  .dModal-buttons .save {
+    padding: 6px;
+    padding-inline: 32px;
+    text-align: center;
+    width: 3rem;
+    background-color: #DC4C64;
+    color: #ffff;
+    border: 1px solid rgba(118, 118, 118, 0.3);
+    border-radius: 3px;
+  }
+
+
+
+@media (max-width: 768px) {
+  .sOpt-container {
+    margin-inline: 2rem; 
+  }
+
+  .job-details-name,
+  .job-details-priority,
+  .job-details-button {
+    width: 100%; 
+    margin-bottom: 5px;
+  }
+
+  .name-column,
+  .priority-column,
+  .actions-column {
+    width: auto; 
+  }
+
+  .create-newJob-title,
+  .job-details p,
+  .joblist-container h5,
+  .modal-job-main-title,
+  .modal-job-titles {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .sOpt-add-section {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .job-details-priority {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .job-details-h {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+}
